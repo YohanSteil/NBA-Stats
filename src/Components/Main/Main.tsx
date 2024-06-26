@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 
 interface Team {
     id: number;
@@ -39,7 +39,7 @@ const Main = () => {
             <ul>
                 {teams.map(team => (
                     <li key={team.id}>
-                       <Link to="#">{team.full_name}</Link>
+                       <Link to={`/oneTeam/${team.id}`}>{team.full_name}</Link>
                        <p>{team.abbreviation}</p>
                 </li>
                 ))}
