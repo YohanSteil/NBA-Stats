@@ -1,0 +1,23 @@
+.title{
+    text-align: center;
+    color: orange;
+}
+
+.onePlayer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    &__link{
+        min-width: 30% ;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.titleh3{
+    color: lightskyblue;
+}
